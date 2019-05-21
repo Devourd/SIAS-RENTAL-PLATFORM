@@ -14,11 +14,12 @@ import com.ldu.pojo.Goods;
 import com.ldu.service.GoodsService;
 import com.ldu.util.DateUtil;
 /**
- * 对商品的操作类（增删改查）
+ * Operating Classes of Commodities (Addition, Deletation, Amendment and Examination)
  * @ClassName 	GoodServiceImpl
- * @date		2017-5-9下午9:22:24
  */
-
+/**
+ * Created by William，66195207.
+ */
 @Service("goodsService")
 public class GoodsServiceImpl implements GoodsService {
 

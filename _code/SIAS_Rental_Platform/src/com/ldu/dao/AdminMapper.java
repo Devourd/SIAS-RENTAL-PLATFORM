@@ -1,20 +1,14 @@
-package com.ldu.service;
+package com.ldu.dao;
 
 import com.ldu.pojo.Admin;
 
-/**
- * Created by William，66195207.
- */
-
-public interface AdminService {
-
+public interface AdminMapper {
+	
 	
 	public Admin findAdmin(Long phone, String password);
 
 	public Admin findAdminById(Integer id);
 
 	public void updateAdmin(Admin admins);
-	
-	
 
 }

@@ -5,16 +5,20 @@ import com.ldu.pojo.CommentExtend;
 import com.ldu.pojo.Comments;
 import com.ldu.pojo.Goods;
 
+/**
+ * Created by William，66195207.
+ */
+
 public interface GoodsService {
     /**
-     * 发布商品
+     * Release commodities
      * @param goods
-     * @param duration 允许上架时长
+     * @param duration Allowable shelf time
      */
     public int addGood(Goods goods , Integer duration);
 
     /**
-     * 通过主键获取商品
+     * Getting goods through primary keys
      * @param goodsId
      * @return
      */
@@ -23,45 +27,45 @@ public interface GoodsService {
     public Goods getGoodsById(Integer goodsId);
 
     /**
-     * 更新商品信息
+     * Update commodity information
      * @param goods
      */
     public void updateGoodsByPrimaryKeyWithBLOBs(int goodsId ,Goods goods);
 
     /**
-     * 通过主键删除商品
+     * Delete merchandise by primary key
      * @param id
      */
-    public void deleteGoodsByPrimaryKey(Integer id);//更新
+    public void deleteGoodsByPrimaryKey(Integer id);//To update
     
-    public void deleteGoodsByPrimaryKeys(Integer id);//删除
+    public void deleteGoodsByPrimaryKeys(Integer id);//To Delete
 
     /**
-     * 获取所有商品信息
+     * Access to all commodity information
      */
     public List<Goods> getAllGoods();
 
     List<Goods> searchGoods(String name, String describle);
 
     /**
-     * 通过最新发布分类获取商品信息
+     * Getting Commodity Information by Newly Published Categories
      */
     public List<Goods> getGoodsByStr(Integer limit,String name,String describle);
 
     /**
-     * 通过商品分类获取商品信息
+     * Getting Commodity Information by Commodity Classification
      */
     public List<Goods> getGoodsByCatelog(Integer id,String name,String describle);
 
     
     /**
-     * 获取 最新发布 物品，根据时间排序,获取前limit个结果
+     * Get the latest releases, sort them by time, and get the first limit results
      * @param limit
      * @return
      */
     public List<Goods> getGoodsOrderByDate(Integer limit);
     /**
-     * 根据分类id,并进行时间排序,获取前limit个结果
+     * According to the classification ID and time order, the first limit results are obtained.
      * @param catelogId
      * @param limit
      * @return
@@ -69,20 +73,20 @@ public interface GoodsService {
     public List<Goods> getGoodsByCatelogOrderByDate(Integer catelogId,Integer limit);
 
     /**
-     * 根据用户的id，查询出该用户的所有闲置
+     * According to the user's id, query out all the idle of the user
      * @param user_id
      * @return
      */
     public List<Goods> getGoodsByUserId(Integer user_id);
 
     /**
-     * 提交订单时，根据goodsId修改商品状态
+     * When submitting an order, modify the product status according to goodsId
      * @param goods
      */
 	public void updateGoodsByGoodsId(Goods goods);
 	
 	/**
-	 * 获取商品数
+	 * Number of Goods Obtained
 	 * @return
 	 */
 	public int getGoodsNum();
@@ -90,7 +94,7 @@ public interface GoodsService {
 	public List<Goods> getPageGoods(int pageNum, int pageSize);
 	
 	/**
-	 * 模糊查询
+	 * Fuzzy query
 	 * @param id
 	 * @param name
 	 * @param form
@@ -104,7 +108,7 @@ public interface GoodsService {
 	public CommentExtend selectCommentsByGoodsId(Integer id);
 	
 	/**
-	 * 新增评论
+	 * New comments
 	 * @param id
 	 */
 	public void addComments(Comments comments);

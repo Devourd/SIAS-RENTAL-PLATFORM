@@ -10,8 +10,9 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * Created by lenovo on 2017/5/12.
+ * Created by William，66195207.
  */
+
 @Service("imageService")
 public class ImageServiceImpl implements ImageService {
     @Resource

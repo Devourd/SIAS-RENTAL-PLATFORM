@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 import com.ldu.dao.AdminMapper;
 import com.ldu.pojo.Admin;
 import com.ldu.service.AdminService;
-
+/**
+ * Created by William，66195207.
+ */
 @Service(value="adminService")
 public class AdminServiceImpl implements AdminService {
 	@Resource

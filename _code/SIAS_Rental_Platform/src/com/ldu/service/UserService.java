@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.ldu.pojo.User;
 
+/**
+ * Created by William，66195207.
+ */
+
 public interface UserService {
 	public void addUser(User user);
 

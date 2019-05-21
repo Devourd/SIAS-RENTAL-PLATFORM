@@ -5,6 +5,10 @@ import java.util.List;
 import com.ldu.pojo.Notice;
 import com.ldu.pojo.NoticeExtend;
 
+/**
+ * Created by William，66195207.
+ */
+
 public interface NoticeService {
 
 	List<Notice> getNoticeList();

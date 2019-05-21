@@ -9,7 +9,9 @@ import org.springframework.stereotype.Service;
 import com.ldu.dao.FocusMapper;
 import com.ldu.pojo.Focus;
 import com.ldu.service.FocusService;
-
+/**
+ * Created by William，66195207.
+ */
 @Service("focusService")
 public class FocusServiceImpl implements FocusService {
 	
@@ -17,7 +19,7 @@ public class FocusServiceImpl implements FocusService {
 	 private FocusMapper focusMapper;
 
 	 /**
-	  * 根据用户id获取我的关注
+	  * Get my attention based on user ID
 	  */
 	 public List<Focus> getFocusByUserId(Integer user_id) {
 		List<Focus> focusList = focusMapper.getFocusByUserId(user_id);
@@ -26,7 +28,7 @@ public class FocusServiceImpl implements FocusService {
 	}
 	 
 	 /*
-	  * 根据用户id和关注id删除
+	  * Delete according to user ID and concern ID
 	  */
 
 	public void deleteFocusByUserIdAndGoodsId(Integer goods_id, Integer user_id) {

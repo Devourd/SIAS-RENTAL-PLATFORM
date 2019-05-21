@@ -9,7 +9,9 @@ import com.ldu.dao.NoticeMapper;
 import com.ldu.pojo.Notice;
 import com.ldu.pojo.NoticeExtend;
 import com.ldu.service.NoticeService;
-
+/**
+ * Created by William，66195207.
+ */
 @Service("NoticeService")
 public class NoticeServiceImpl implements NoticeService{
 	 @Resource

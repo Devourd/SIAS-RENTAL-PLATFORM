@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.ldu.pojo.Purse;
 
+/**
+ * Created by William，66195207.
+ */
+
 public interface PurseService {
 	
 	public void updatePurseByuserId(Integer userId, Float balance);
@@ -13,14 +17,14 @@ public interface PurseService {
 	public void addPurse(Integer userId);
 
 	/**
-	 * 根据用户id获取钱包信息
+	 * Getting wallet information based on user ID
 	 * @param user_id
 	 * @return
 	 */
 	public Purse getPurseByUserId(Integer user_id);
 
 	/**
-	 * 充值或提现
+	 * Recharge or offer
 	 * @param purse
 	 */
 	public void updatePurse(Purse purse);

@@ -4,6 +4,10 @@ import java.util.List;
 
 import com.ldu.pojo.Orders;
 
+/**
+ * Created by William，66195207.
+ */
+
 public interface OrdersService {
 	
 	public List<Orders> getOrdersByUserId(Integer user_id);

@@ -5,19 +5,20 @@ import java.util.List;
 import com.ldu.pojo.Image;
 
 /**
- * Created by lenovo on 2017/5/12.
+ * Created by William，66195207.
  */
+
 public interface ImageService {
     int insert(Image record);
     /**
-     * 通过商品id获取该商品的图片
+     * Get a picture of the product through the product ID
      * @param goodsId
      * @return
      */
     public List<Image> getImagesByGoodsPrimaryKey(Integer goodsId);
 
     /**
-     * 通过商品Id删除商品
+     * Delete goods by commodity ID
      * @param goodsId
      * @return
      */

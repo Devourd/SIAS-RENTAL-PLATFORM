@@ -6,6 +6,8 @@ import com.ldu.pojo.Catelog;
 
 /**
  * Created by William，66195207.
+ *  Tested by: William，66195207.
+ *  Debugged by: William，66195207.
  */
 public interface CatelogService {
     public List<Catelog> getAllCatelog();

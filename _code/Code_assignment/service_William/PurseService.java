@@ -3,9 +3,10 @@ package com.ldu.service;
 import java.util.List;
 
 import com.ldu.pojo.Purse;
-
 /**
  * Created by William，66195207.
+ *  Tested by: William，66195207.
+ *  Debugged by: William，66195207.
  */
 
 public interface PurseService {

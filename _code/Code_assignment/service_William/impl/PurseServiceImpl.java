@@ -12,6 +12,8 @@ import com.ldu.pojo.Purse;
 import com.ldu.service.PurseService;
 /**
  * Created by William，66195207.
+ *  Tested by: William，66195207.
+ *  Debugged by: William，66195207.
  */
 @Service("PurserService")
 public class PurseServiceImpl implements PurseService{

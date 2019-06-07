@@ -11,6 +11,8 @@ import com.ldu.pojo.Focus;
 import com.ldu.service.FocusService;
 /**
  * Created by William，66195207.
+ *  Tested by: William，66195207.
+ *  Debugged by: William，66195207.
  */
 @Service("focusService")
 public class FocusServiceImpl implements FocusService {
